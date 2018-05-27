@@ -1,0 +1,23 @@
+TODO
+
+Prepare for git:
+  ✔ remove the credentials in verif_contract.php @done(18-03-17 15:30)
+  ☐ remove email credentials in few files
+  ☐ go through the script and js folders to remove what we don't need
+  ☐ redo debate.php with a grid
+
+
+Scripts Used:
+  ☐ jquery  =>  everywhere
+  ☐ tinymce
+  ☐ simpleMDE => in debate  check why ? 
+  ☐ d3 => in index
+  ☐ Datatable => in myaacount  and research
+
+Add to the container:
+  ✔ pear install Mail @done(18-03-18 17:22)
+  ✔ pear install Mail_Mime @done(18-03-18 17:22)
+  ✔ pear install pear/Net_SMTP @done(18-03-18 17:22)
+  
+
+

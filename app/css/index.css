@@ -1,0 +1,120 @@
+#colonne_gauche{
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 540px;
+	font-size:14px;
+	z-index:1;
+}
+
+#colonne_droite{
+	position: relative;
+	float: right;
+	width: 500px;
+	height: 540px;
+	font-weight: bold;
+}
+
+#titre{
+	margin: 0 auto 20px auto;
+	width: 300px;
+}
+
+#qui{
+	position: relative;
+	width: 90%;
+	height: 112px;
+	padding: 10px;
+	margin: 0 auto 20px auto;
+	border-radius: 10px;
+	border: 2px solid grey;
+	background-color: white;
+}
+
+#comment{
+	position: relative;
+	width: 95%;
+	margin: auto;
+	border-radius: 10px;
+	border: 2px solid grey;
+	background-color: white;
+}
+
+#etape{
+	margin: auto;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 8px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+#cadregraph{
+	background-color: white;
+	width: 480px;
+	margin-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 30px;
+	height: 520px;
+	padding-bottom: 0px;
+	border-radius: 10px;
+	border: 2px solid grey;
+}
+
+#titregraph{
+	width: 300px;
+	font-size: 24px;
+	margin: 0 auto 20px auto;
+}
+
+#graph{
+	margin: auto;
+	width: 95%;
+	height: 360px;
+	background-color:white;
+	border-radius: 10px;
+	border: 2px solid grey;
+}
+
+#rechercher{
+	margin-top: 20px;
+}
+
+#exemple{
+	width: 220px;
+	margin: 3% auto 5% auto;
+	background-color: ;
+}
+
+#license{
+	clear: both;
+	display: block;
+	position: relative;
+}
+
+.clear {
+    clear:both;
+}
+
+#top_space{
+	height:90px;
+}
+
+
+.tooltip{
+	visibility: hidden;
+	position: absolute;
+	line-height: 1;
+	font-weight: bold;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 2px;
+	pointer-events: none;
+}
+
+.divider{
+	width: 40px;
+  height: auto;
+  display: inline-block;
+}

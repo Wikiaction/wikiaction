@@ -1,0 +1,24 @@
+#graphique{
+	position: relative;
+	text-align: center;
+	font-size: 1.3em;
+	color: black;
+	width: 700px;
+	margin: 40px auto;
+	padding: 15px;
+	background-color: white;
+	border: 2px solid #3B3131;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#rechercher{
+	position: relative;
+	margin: auto;
+	display: inline-block;
+}
+
+.divider{
+	width: 120px;
+  height:auto;
+  display:inline-block;
+}

@@ -1,0 +1,33 @@
+footer {
+  font-weight: bold;
+  z-index: 9999;
+  width: 100%;
+  line-height: 49px;
+  background-color: #b4e5eb;
+  height: 50px; }
+
+.footer-wrap {
+  text-align: center;
+  background-color: #b4e5eb;
+  width: 1000px;
+  margin: auto; }
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+footer li {
+  display: inline;
+  padding: 16px; }
+
+footer a {
+  font-size: 15px;
+  color: #085969; }
+
+footer a:hover {
+  color: #F47E05; }
+
+.push {
+  height: 50px; }

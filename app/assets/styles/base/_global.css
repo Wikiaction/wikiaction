@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0; 
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center; 
+}
+
+input, button, submit { border:none; } 
+
+h1, h2, h3 {
+  margin: 0px; 
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #F47E05; 
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto -50px auto;
+  height: auto !important;
+  min-height: 100%;
+}
+.push {
+  height: 50px;
+}
+
+#top_space {
+  height: 70px;
+}
+
+/*------Projet--------*/
+.egg {
+  fill: #179ab5; }
+
+.egg_border {
+  stroke: #F47E05; }
+
+
+
+/* #container {
+  background-color: transparent;
+  width: 1000px;
+  position: relative;
+  margin-top: 45px; 
+} */
+
+/* @font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.ttf"); 
+} */
+
+
+
+

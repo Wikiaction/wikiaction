@@ -1,0 +1,61 @@
+#graphique{
+	position: relative;
+	display: block;
+	background-color: white;
+	color: black;
+	width: 600px;
+	height: 450px;
+	margin: auto;
+	padding: 0px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px 5px 5px 5px;
+	border: 2px solid grey;
+}
+
+#psd{
+	text-align: left;
+	color: black;
+	width: 40%;
+	margin: 50px auto 40px	auto;
+	background-color: transparent;
+}
+
+#mail{
+	text-align: left;
+	color: black;
+	width: 40%;
+	margin: 50px auto 40px	auto;
+	background-color: transparent;
+}
+
+#pass1, #pass2{
+	clear: both;
+	text-align: left;
+	color: black;
+	width: 40%;
+	margin: 50px auto 40px	auto;
+	background-color: transparent;
+}
+
+#submit {
+	border-bottom: none;
+	width: 210px;
+}
+
+input {
+  margin: 5px 5px;
+  display: block;
+  border: none;
+  padding: 5px;
+  margin-top: 17%;
+  border-bottom: solid 1px #f5cb4c;
+  color: #orange;
+  font-size:16px;
+}
+
+input:focus, input:valid {
+ box-shadow: none;
+ outline: none;
+ background-position: 0 0;
+}

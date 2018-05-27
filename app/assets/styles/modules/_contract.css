@@ -1,0 +1,72 @@
+.contract{
+
+	&__title{
+		font-size: 20px;
+		padding-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5,auto);
+		grid-row-gap: 20px;
+		background: white;
+		border-radius: 5px 5px 5px 5px;
+		border: 2px solid grey;
+		text-align: left;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	&__headers{
+		grid-column: 1 / span 2;
+		font-size: 1rem;
+		align-self: center;
+	}
+
+	&__actions{
+		grid-column: 1 / span 2;
+		font-size: 1rem;
+	}
+
+	&__signature{
+		position: relative;
+		display: block;
+		margin: 0 auto 15px auto;
+	}
+
+	&__nom{
+		width: 300px;
+		font-size: 14px;
+		justify-self: center;
+		align-self: center;
+	}
+	
+	&__email{
+		width: 300px;
+		border-bottom: solid 1px #f5cb4c; 
+		justify-self: center;
+		align-self: center;
+
+		& input[type="text"]:disabled {
+			background: white;
+		}
+	}
+
+	&__validation{
+		grid-column: 1 / -1;
+		align-self: center;
+		justify-self: center;
+	}
+
+	&__input{
+		margin: 5px 5px;
+		display: block;
+		border: none;
+		padding: 5px;
+		font-size: 14px;
+		border-bottom: solid 1px #f5cb4c; 
+	}
+}

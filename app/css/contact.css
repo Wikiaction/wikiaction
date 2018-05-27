@@ -1,0 +1,29 @@
+#top_space{
+	height:70px;
+}
+
+#contact-title{
+	display: block;
+	position: relative;
+	text-align: left;
+	color: black;
+	padding-bottom: 60px;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+#contact-text{
+	display: block;
+	position: relative;
+	text-align: center;
+	color: black;
+	width: 800px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	border: 2px solid #3B3131;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 1.3em;
+	line-height: 40px;
+}

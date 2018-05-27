@@ -1,0 +1,36 @@
+.button {
+  background-color: #179ab5;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+  display: inline-block;
+
+  &--big{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &--small{
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+}
+
+.button:hover, .button.selected:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #F47E05 ; }
+
+.button.selected {
+  text-decoration: none;
+  color: white;
+  background-color: #FFB870; }
+
+.button.big {
+  font-size: 18px;
+  font-weight: bold; }
+
+.button.small {
+  font-size: 8px;
+  font-weight: normal; }

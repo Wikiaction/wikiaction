@@ -1,0 +1,123 @@
+#wrap {
+  width: 900px;
+  height: 800px;
+  margin: 50 auto;
+}
+
+.container{
+  margin-bottom: -50px;
+  /*height: 100%;*/
+  min-height: 100%;
+}
+
+#question{
+  position: relative;
+  /*top: 100px;*/
+	text-align: center;
+	color: black;
+	width: 600px;
+	height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+	/*margin-top: 100px;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+  margin: auto;
+	font-size: 14px;
+}
+
+#container2{
+	position: relative;
+  /*top: 130px;*/
+  display: table;
+	/*width: 100%;*/
+	height:300px;
+	margin: auto;
+	/*float: left;*/
+	/*text-align: left;*/
+	/*font-weight: bold;*/
+}
+
+#answer_div {
+	display: table-cell;
+	text-align: left;
+  vertical-align:middle;
+	background: white;
+	height: 400px;
+	min-height: 260px;
+	max-height: 400px;
+	width: 650px;
+	/*float: left;*/
+	/*padding: 25px;*/
+	/*margin-top:30px;
+	margin-bottom:50px;*/
+	border-radius: 5px 5px 5px 5px;
+	border: 2px solid grey;
+	font-size: 16px;
+  margin: auto;
+}
+
+#next{
+  display:table-cell;
+  vertical-align:middle;
+  margin: auto;
+	/*margin-top: 145px;*/
+}
+
+#prev{
+  display:table-cell;
+  vertical-align:middle;
+  margin: auto;
+  /*float: left;*/
+	transform: rotate(180deg);
+  /*margin-top: 145px;*/
+}
+
+#table_div{
+	position: relative;
+  /*top: 170px;*/
+  display:table;
+	text-align: left;
+	background: white;
+  height: 200px;
+	width: 650px;
+	padding: 25px;
+	margin: 0 auto;
+	border-radius: 5px 5px 5px 5px;
+	border: 2px solid grey;
+	font-size: 16px;
+  margin-bottom: 30px;
+}
+
+
+.arrow {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border-right: 1.5em solid black;
+  border-top: 1.5em solid black;
+  transform: rotate(45deg);
+  margin-right: 0.5em;
+}
+
+a.arrow:hover {
+  border-top: 1.5em solid #f5cb4c;
+	border-right: 1.5em solid #f5cb4c;
+}
+
+/* input {
+  padding: 25px;
+  border: solid 0px #E5E5E5;
+  outline: 0;
+  font: normal 17px/100% Verdana, Tahoma, sans-serif;
+  width: 80%;
+  background: #FFFFFF;
+} */
+
+/* input[type="radio"], input[type="checkbox"] {
+  width: 20px;
+}
+
+input[type="date"] , input[type="number"] {
+  border: solid 1px #E5E5E5;
+} */

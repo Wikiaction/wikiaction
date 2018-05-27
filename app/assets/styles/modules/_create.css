@@ -1,0 +1,16 @@
+.create-project{
+	background-color: white;
+	border: 2px solid #3B3131;
+	border-radius: 5px 5px 5px 5px;
+	width: 80%;
+	margin: 0 auto;
+
+	&__header{
+		padding: 10px 20px;
+		font-size: 1rem;
+	}
+	&__buttons{
+		padding-bottom: 20px;
+	}
+}
+

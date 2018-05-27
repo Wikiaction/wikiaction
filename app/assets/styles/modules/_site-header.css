@@ -1,0 +1,52 @@
+.header {
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  background-color: #F47E05;
+  width: 100%;
+  height: 45px;
+  z-index: 9998;
+  
+  & ul {
+    list-style-type: none;
+    text-align: right;
+    overflow: hidden;
+  }
+
+  & li {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px; 
+  }
+
+  & a {
+    color: white;
+  }
+  
+  & a:hover {
+    color: #179ab5;
+  }
+
+  &__menu{
+    position: relative;
+    top: -16px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    height: 45px;
+    width: 1000px;
+    z-index: 9999;
+  }
+
+  &__logo{
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 45px;
+    background-color: transparent;
+  }
+}
+
+
+

@@ -1,0 +1,48 @@
+version: '3.6'
+
+services:
+    webserver:
+        build: 
+            context: ./
+            dockerfile: Dockerfile
+        container_name: wikiaction-webserver
+        working_dir: /application
+        volumes:
+            - ./config/custom.php.ini:/usr/local/etc/php/conf.d/custom.php.ini
+            - ./app/:/var/www/html/
+        ports:
+            - "8000:80"
+        depends_on:
+            - database
+    database: 
+        image: mysql:5.7.22
+        container_name: wikiaction-db
+        env_file:
+            - ".env"
+        restart: always
+        volumes:
+            - ./config/mysql_data:/docker-entrypoint-initdb.d
+        environment:
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        ports:
+            - "8989:3306"
+    myadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin
+        ports:
+            - "8080:80"
+        environment:
+            PMA_HOST: wikiaction-db
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        restart: always
+        depends_on:
+            - database
+    
+
+
+    

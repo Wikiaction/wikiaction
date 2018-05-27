@@ -1,0 +1,21 @@
+.about{
+	&__title{
+		padding-top: 70px;
+		padding-bottom: 60px;
+		font-size: 1.3rem;
+	}
+	
+	&__text{
+		width: 80%;
+		padding: 25px;
+		margin: 0 auto 50px auto;
+		background-color: white;
+		border-radius: 10px;
+		border: 2px solid #3B3131;
+		text-align: left;
+		line-height: 20pt;
+		font-size: 1.3rem;
+	}
+}
+
+

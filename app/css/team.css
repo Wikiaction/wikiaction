@@ -1,0 +1,19 @@
+#abouttitle{
+	text-align: left;
+	color: black;
+	width:22%;
+	margin-left:38%;
+	margin-bottom: 6%;
+	margin-top:5%;
+	padding-top: 0%;
+	background-color: transparent;
+}
+
+#abouttext{
+	background-color: transparent;
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+	text-align: left;
+	font-size: 18px;
+}

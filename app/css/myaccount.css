@@ -1,0 +1,98 @@
+.search{
+	float: none;
+	display: inline-block;
+  padding-bottom: 30px;
+}
+
+.dataTables_filter input {
+	width: 400px;
+	height: 40px;
+}
+
+#title{
+	text-align: center;
+	color: black;
+	width: 300px;
+	margin-left: 350px;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	padding: 0px;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+#container2{
+	position: relative;
+	background-color: transparent;
+	top: 90px;
+	width: 1000px;
+	margin: auto;
+	height: auto;
+	height:auto;
+	padding-top: 0%;
+	color: black;
+}
+
+#result{
+	background-color: purple;
+	color: black;
+	width: 600px;
+	height:auto;
+	margin-left: 230px;
+	margin-right: 0%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	float: left;
+	text-align: left;
+	font-size: 	;
+}
+
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+		border-radius: 15px 15px 0 0;
+    /*background-color: #f1f1f1;*/
+}
+
+/* Float the list items side by side */
+ul.tab li {
+	float: left;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    /*color: black;*/
+    text-align: center;
+    /*padding: 14px;*/
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+		width: 499px;
+		height: 60px;
+		line-height: 60px;
+
+}
+
+/* Change background color of links on hover */
+ul.tab li:hover {
+	/*background-color: #ddd;*/
+}
+
+/* Create an active/current tablink class */
+ul.tab li:focus, .active {
+	/*background-color: #ccc;*/
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

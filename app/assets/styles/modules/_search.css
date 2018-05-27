@@ -1,0 +1,10 @@
+.search__title{
+	display: block;
+	position: relative;
+	color: black;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	background-color: transparent;
+	font-size: 17px;
+}
+

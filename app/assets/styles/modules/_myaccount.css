@@ -1,0 +1,63 @@
+
+.myaccount__container2{
+	position: relative;
+	background-color: transparent;
+	top: 90px;
+	width: 1000px;
+	margin: auto;
+	height: auto;
+	height:auto;
+	padding-top: 0%;
+	color: black;
+}
+
+
+/* Style the list */
+ul.myaccount__tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+		border-radius: 15px 15px 0 0;
+		border: 1px solid #ccc;
+  	background-color: #b4e5eb;
+}
+
+/* Float the list items side by side */
+ul.myaccount__tab li {
+	margin: 0;
+	float: left;
+}
+
+/* Style the links inside the list items */
+ul.myaccount__tab li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+		width: 499px;
+		height: 60px;
+		line-height: 60px;
+		color: white;
+}
+
+/* Change background color of links on hover */
+ul.myaccount__tab li:hover {
+	background-color: #F47E05;
+}
+
+/* Create an active/current tablink class */
+ul.myaccount__tab li:focus, .active {
+	background-color: #179ab5;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
