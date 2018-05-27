@@ -18,6 +18,13 @@ Scripts Used:
   
 Translation
 
+Connect actions selected in "project.php" page to actions selected in "contract.php"
+
+"Create-page.php" add a question (ability to ask for specific informations (phone number, age, adress etc.)
+
+Set modification priority based on rights granted to administrators
+
+Imbricate projects in other as if they were actions (?)
 
 
 
