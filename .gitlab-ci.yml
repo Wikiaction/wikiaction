@@ -1,0 +1,28 @@
+image: tetraweb/php
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$STAGING_PRIVATE_KEY_ENCODED" | base64 --decode)
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+production:
+  environment: production
+  only:
+    - master
+  script:
+    - ssh -p22 gael@87.98.138.147 "mkdir testGitMaster/_tmp"
+    - scp -P22 -r build/* gael@87.98.138.147:testGitMaste/_tmp
+    - ssh -p22 gael@87.98.138.147 "mv testGitMaste/live testGitMaste/_old && mv testGitMaste/_tmp testGitMaste/live"
+    - ssh -p22 gael@87.98.138.147 "rm -rf testGitMaste/_old"
+
+stage_dev:
+  environment: staging
+  except:
+    - master
+  script:
+    - ssh -p22 gael@87.98.138.147 "mkdir testGitDev/_tmp"
+    - scp -P22 -r build/* gael@87.98.138.147:testGitDev/_tmp
+    - ssh -p22 gael@87.98.138.147 "mv testGitDev/live testGitDev/_old && mv testGitDev/_tmp testGitDev/live"
+    - ssh -p22 gael@87.98.138.147 "rm -rf testGitDev/_old"
