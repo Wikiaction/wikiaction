@@ -14,7 +14,7 @@
 	<div class="container">
 
 		<div class="about__title">
-			<h1>À PROPOS</h1>
+			<h1>À PROPOS:</h1>
 		</div>
 
 		<div class="about__text">
