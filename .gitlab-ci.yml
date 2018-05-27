@@ -13,9 +13,9 @@ production:
     - master
   script:
     - ssh -p22 gael@87.98.138.147 "mkdir testGitMaster/_tmp"
-    - scp -P22 -r build/* gael@87.98.138.147:testGitMaste/_tmp
-    - ssh -p22 gael@87.98.138.147 "mv testGitMaste/live testGitMaste/_old && mv testGitMaste/_tmp testGitMaste/live"
-    - ssh -p22 gael@87.98.138.147 "rm -rf testGitMaste/_old"
+    - scp -P22 -r build/* gael@87.98.138.147:testGitMaster/_tmp
+    - ssh -p22 gael@87.98.138.147 "mv testGitMaster/live testGitMaster/_old && mv testGitMaster/_tmp testGitMaster/live"
+    - ssh -p22 gael@87.98.138.147 "rm -rf testGitMaster/_old"
 
 stage_dev:
   environment: staging
