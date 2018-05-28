@@ -7,6 +7,18 @@ before_script:
   - mkdir -p ~/.ssh
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
+stage_dev:
+  environment:
+    name: staging
+    url: https://dev.wikiaction.org
+  except:
+    - master
+  script:
+    - ssh -p22 gael@87.98.138.147 "mkdir testGitDev/_tmp"
+    - scp -P22 -r app/* gael@87.98.138.147:testGitDev/_tmp
+    - ssh -p22 gael@87.98.138.147 "mv testGitDev/live testGitDev/_old && mv testGitDev/_tmp testGitDev/live"
+    - ssh -p22 gael@87.98.138.147 "rm -rf testGitDev/_old"
+
 production:
   environment: production
   only:
@@ -17,12 +29,3 @@ production:
     - ssh -p22 gael@87.98.138.147 "mv testGitMaster/live testGitMaster/_old && mv testGitMaster/_tmp testGitMaster/live"
     - ssh -p22 gael@87.98.138.147 "rm -rf testGitMaster/_old"
 
-stage_dev:
-  environment: staging
-  except:
-    - master
-  script:
-    - ssh -p22 gael@87.98.138.147 "mkdir testGitDev/_tmp"
-    - scp -P22 -r app/* gael@87.98.138.147:testGitDev/_tmp
-    - ssh -p22 gael@87.98.138.147 "mv testGitDev/live testGitDev/_old && mv testGitDev/_tmp testGitDev/live"
-    - ssh -p22 gael@87.98.138.147 "rm -rf testGitDev/_old"
